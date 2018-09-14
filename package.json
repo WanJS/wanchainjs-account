@@ -1,30 +1,30 @@
 {
-  "name": "ethereumjs-account",
-  "version": "2.0.5",
-  "description": "Encoding, decoding and validation of Ethereum's Account schema",
+  "name": "wanchainjs-account",
+  "version": "2.0.6",
+  "description": "Encoding, decoding and validation of Wanchain's Account schema",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ethereumjs/ethereumjs-account.git"
+    "url": "git+https://github.com/WanJS/wanchainjs-account.git"
   },
   "scripts": {
-    "coverage": "nyc npm run test && nyc report --reporter=text-lcov > .nyc_output/lcov.info",
-    "coveralls": "npm run coverage && coveralls <.nyc_output/lcov.info",
+    "test:coverage": "nyc npm run test:unit && npm run test:coveralls-upload",
+    "test:coveralls-upload": "if [ $COVERALLS_REPO_TOKEN ]; then nyc report --reporter=text-lcov | coveralls; fi",
     "lint": "standard",
-    "test": "tape ./test/index.js"
+    "test:unit": "tape ./test/index.js"
   },
   "keywords": [
-    "ethereum",
+    "wanchain",
     "account"
   ],
-  "author": "mjbecze (mjbecze@gmail.com)",
+  "author": "Tyrion70 (tyrion70@gmail.com)",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/ethereumjs/ethereumjs-account/issues"
+    "url": "https://github.com/WanJS/wanchainjs-account/issues"
   },
-  "homepage": "https://github.com/ethereumjs/ethereumjs-account#readme",
+  "homepage": "https://github.com/WanJS/wanchainjs-account#readme",
   "dependencies": {
-    "ethereumjs-util": "^5.0.0",
+    "wanchainjs-util": "^5.2.0",
     "rlp": "^2.0.0",
     "safe-buffer": "^5.1.1"
   },

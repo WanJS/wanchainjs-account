@@ -1,4 +1,4 @@
-const ethUtil = require('ethereumjs-util')
+const ethUtil = require('wanchainjs-util')
 const rlp = require('rlp')
 const Buffer = require('safe-buffer').Buffer
 

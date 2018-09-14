@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 (modification: no type change headlines) and this project adheres to 
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [2.0.6] - 2018-09-14
+- Wanchain
+
 ## [2.0.5] - 2018-05-08
 - Fixes a bug for contract code stored with level DB, PR [#5](https://github.com/ethereumjs/ethereumjs-account/pull/5)
 - Added ``safe-buffer`` dependency for backwards compatibility, PR [#14](https://github.com/ethereumjs/ethereumjs-account/pull/14)
